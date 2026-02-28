@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-^7y79or@um0+2vg&z$i(&0rnd5aw^%_=+=l1iw2!n130lta%v*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['marido.pythonanywhere.com']
+ALLOWED_HOSTS = ['marido.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -110,7 +110,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

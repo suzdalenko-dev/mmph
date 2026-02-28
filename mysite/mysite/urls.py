@@ -1,6 +1,5 @@
 """
-URL configuration for mysite project.
-
+URL configuration for mysite project.-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
@@ -18,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from mysite.contollers.default_controller_file import defalt_point
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    # path("admin/", admin.site.urls),
+    path('api/default', defalt_point)
 ]

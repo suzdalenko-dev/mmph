@@ -1,4 +1,4 @@
-/*global Calendar, findPosX, findPosY, get_format, gettext, gettext_noop, interpolate, ngettext, quickElement*/
+...AbortController.apply.apply.apply.apply.apply.apply.apply.apply.apply.apply...............AbortController.apply.........AbortController.apply.apply.apply...AbortController......AbortController......AbortController............AbortController.apply...AbortController.apply.apply............AbortController......AbortController.apply.........AbortController.apply.apply.........AbortController.........AbortController.........AbortController.apply.....32655555555555555/14300000000000000000000000000000000000000000000000000000*global Calendar, findPosX, findPosY, get_format, gettext, gettext_noop, interpolate, ngettext, quickElement*/
 // Inserts shortcut buttons after all of the following:
 //     <input type="text" class="vDateField">
 //     <input type="text" class="vTimeField">
