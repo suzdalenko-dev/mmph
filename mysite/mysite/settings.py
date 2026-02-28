@@ -25,17 +25,9 @@ SECRET_KEY = "django-insecure-^7y79or@um0+2vg&z$i(&0rnd5aw^%_=+=l1iw2!n130lta%v*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS        = ['marido.pythonanywhere.com', '127.0.0.1', ]
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1",
-    "http://localhost",
-    "https://marido.pythonanywhere.com",
-]
-CSRF_TRUSTED_ORIGINS = [
-    "https://marido.pythonanywhere.com",
-    "http://localhost",
-    "http://127.0.0.1",
-]
+ALLOWED_HOSTS        = [ 'marido.pythonanywhere.com', '127.0.0.1', ]
+CORS_ALLOWED_ORIGINS = [ "http://127.0.0.1","http://localhost","https://marido.pythonanywhere.com", ]
+CSRF_TRUSTED_ORIGINS = [ "https://marido.pythonanywhere.com","http://localhost","http://127.0.0.1", ]
 
 # Application definition
 
@@ -69,10 +61,10 @@ TEMPLATES = [
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
-                "django.template.context_processors.debug",
-                "django.template.context_processors.request",
-                "django.contrib.auth.context_processors.auth",
-                "django.contrib.messages.context_processors.messages",
+              #  "django.template.context_processors.debug",
+              #  "django.template.context_processors.request",
+              #  "django.contrib.auth.context_processors.auth",
+              #  "django.contrib.messages.context_processors.messages",
             ],
         },
     },
@@ -96,18 +88,18 @@ DATABASES = {
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
+  #  {
+  #      "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+  #  },
+  #  {
+  #      "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+  #  },
+  #  {
+  #      "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+  #  },
+  #  {
+  #      "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+  #  },
 ]
 
 
