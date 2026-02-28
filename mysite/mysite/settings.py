@@ -26,7 +26,10 @@ SECRET_KEY = "django-insecure-^7y79or@um0+2vg&z$i(&0rnd5aw^%_=+=l1iw2!n130lta%v*
 DEBUG = True
 
 ALLOWED_HOSTS        = ['marido.pythonanywhere.com', '127.0.0.1']
-CORS_ALLOWED_ORIGINS = ['marido.pythonanywhere.com', '127.0.0.1']
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:3000",
+    "https://marido.pythonanywhere.com",
+]
 
 # Application definition
 
