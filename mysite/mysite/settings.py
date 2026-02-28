@@ -25,33 +25,39 @@ SECRET_KEY = "django-insecure-^7y79or@um0+2vg&z$i(&0rnd5aw^%_=+=l1iw2!n130lta%v*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS        = ['marido.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS        = ['marido.pythonanywhere.com', '127.0.0.1', ]
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:3000",
+    "http://127.0.0.1",
+    "http://localhost",
     "https://marido.pythonanywhere.com",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://marido.pythonanywhere.com",
+    "http://localhost",
+    "http://127.0.0.1",
 ]
 
 # Application definition
 
 INSTALLED_APPS = [
     "corsheaders",
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
+    # "django.contrib.admin",
+    # "django.contrib.auth",
+    # "django.contrib.contenttypes",
+    # "django.contrib.sessions",
+    # "django.contrib.messages",
+    # "django.contrib.staticfiles",
 ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.security.SecurityMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    #   "django.middleware.security.SecurityMiddleware",
+    #   "django.contrib.sessions.middleware.SessionMiddleware",
+    #   "django.middleware.common.CommonMiddleware",
+    #   "django.middleware.csrf.CsrfViewMiddleware",
+    #   "django.contrib.auth.middleware.AuthenticationMiddleware",
+    #   "django.contrib.messages.middleware.MessageMiddleware",
+    #   "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"
@@ -108,13 +114,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
-
-USE_I18N = True
-
-USE_TZ = True
+LANGUAGE_CODE = "es-es"
+TIME_ZONE     = "UTC"
+USE_I18N      = True
+USE_TZ        = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
